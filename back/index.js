@@ -226,10 +226,6 @@ async function main() {
 
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("Hello World");
-});
-
 app.get("/api/posts", (req, res) => {
   readPosts(0, (posts) => {
     // console.log(posts);
